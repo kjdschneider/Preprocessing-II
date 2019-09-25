@@ -257,6 +257,10 @@ header div nav a:active {
     padding: 0px;
   }
 }
+.home .content-section .text-content p:before {
+  content: '\263C';
+  padding-right: 5px;
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
@@ -434,6 +438,9 @@ header div nav a:active {
   border: 5px solid #ffe1b3;
   transition: 0.2s;
 }
+.home #vacation-form #textarea-wrapper textarea:focus {
+  border: 5px solid #ffe1b3;
+}
 .home #vacation-form #textarea-wrapper .form-text {
   font-size: 2.2rem;
 }
@@ -474,4 +481,7 @@ header div nav a:active {
 }
 .home #vacation-form button:active {
   background: #02b1cd;
+}
+.home #vacation-form button span:after {
+  content: '\2600';
 }

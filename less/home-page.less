@@ -30,6 +30,11 @@
         width: 100%;
         padding: 0px;
       }
+
+      p:before {
+        content: '\263C';
+        padding-right: 5px;
+      }
     }
 
     .img-content {
@@ -184,6 +189,10 @@
         border: 5px solid darken(@sandy-beach, 5%);
         transition: .2s;
       }
+
+      &:focus {
+        border: 5px solid darken(@sandy-beach, 5%);
+      }
     }
 
     .form-text {
@@ -204,6 +213,10 @@
     margin: 5% auto;
     font-size: 2.5rem;
     width: 50%;
+
+    span:after {
+      content: '\2600';
+    }
   }
 }
 }// home
