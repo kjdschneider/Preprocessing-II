@@ -66,19 +66,48 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button">Sign Me Up!</button>
+        <button type="button"><span>Sign Me Up! </span></button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button">Sign Me Up!</button>
+        <button type="button"><span>Sign Me Up! </span></button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <button type="button">Sign Me Up!</button>
+        <button type="button"><span>Sign Me Up! </span></button>
       </div>
     </section>
+
+    <section id='vacation-form'>
+      <h4>Book Your Vacation!</h4>
+      <form name='vacationbooking'>
+        <div class='half'>
+          <span class='form-text'>Last name:</span>
+          <input type='text' name='lastname'>
+          <span class='form-text'>Email:</span>
+          <input type='text' name='email'>
+        </div>
+        <div class='half'>
+          <span class='form-text'>Vacation Package:</span>
+          <select name='vacations'>
+            <option value='placeholder' disabled selected>Please choose!</option>
+            <option value='sun'>Fun in the Sun</option>
+            <option value='mountain'>Mountain Trip</option>
+            <option value='island'>Island Paradise</option>
+          </select>
+          <span class='form-text'>Phone number:</span>
+          <input type='text' name='phone'>
+        </div>
+      </form>
+      <div id='textarea-wrapper'>
+        <span class='form-text'>Special Accommodations:</span>
+        <textarea rows='75' cols='75' form='vacationbooking'></textarea>
+      </div>
+      <button type='submit' value='Submit' form='vacationbooking'><span>Book Now! </span></button>
+    </section>
+
   </div><!-- container -->
 
   <footer class="footer">
