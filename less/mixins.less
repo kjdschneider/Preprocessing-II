@@ -1,1 +1,42 @@
 // Mixins in here
+.flex(@wrap, @justify, @align){
+    display: flex;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@background, @color, @border){
+    background: @background;
+    color: @color;
+    border: @border;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    width: 82%;
+    padding: 10px 10px;
+
+
+    span {
+        position: relative;
+        transition: .5s;
+    }
+
+    span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &:hover span {
+        padding-right: 20px;
+    }
+
+    &:hover span:after{
+        opacity: 1;
+    }
+
+    &:active {
+        background: saturate(@button-bg, 20%);
+    }
+}

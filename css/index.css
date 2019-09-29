@@ -1,1 +1,490 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  height: 2000px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+@media (max-width: 850px) {
+  header div {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  header div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header div nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+}
+@media (max-width: 500px) {
+  header div nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
+header div nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
+@media (max-width: 500px) {
+  header div nav a {
+    font-size: 1.5rem;
+  }
+}
+header div nav a:hover {
+  color: #FFEBCD;
+  transition: 0.2s;
+}
+header div nav a:active {
+  color: #febe50;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+.home {
+  padding: 0% 7%;
+}
+.home #intro {
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home #intro .imgContain {
+  margin-bottom: 20px;
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0px;
+  }
+}
+.home .content-section .text-content p:before {
+  content: '\263C';
+  padding-right: 5px;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0px;
+  }
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 850px) {
+  .home .content-pick {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12%;
+  }
+}
+.home .content-pick .destination {
+  width: 32%;
+  margin-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .home .content-pick .destination {
+    width: 80%;
+  }
+}
+.home .content-pick .destination h4 {
+  width: 100%;
+}
+.home .content-pick .destination p {
+  font-size: 1.4rem;
+}
+.home .content-pick .destination button {
+  background: #17A2B8;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  width: 82%;
+  padding: 10px 10px;
+}
+.home .content-pick .destination button span {
+  position: relative;
+  transition: 0.5s;
+}
+.home .content-pick .destination button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home .content-pick .destination button:hover span {
+  padding-right: 20px;
+}
+.home .content-pick .destination button:hover span:after {
+  opacity: 1;
+}
+.home .content-pick .destination button:active {
+  background: #02b1cd;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination button {
+    width: 100%;
+  }
+}
+.home #vacation-form {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home #vacation-form h4 {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.home #vacation-form form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 2px dashed #C0C0C0;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background: #17A2B8;
+}
+.home #vacation-form form .half {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home #vacation-form form .half input,
+.home #vacation-form form .half select {
+  width: 80%;
+  height: 20%;
+  border: 3px solid #C0C0C0;
+  border-radius: 10px;
+}
+.home #vacation-form form .half input:hover,
+.home #vacation-form form .half select:hover {
+  border: 3px solid #FFEBCD;
+  transition: 0.2s;
+}
+.home #vacation-form form .half select {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.home #vacation-form form .half select option {
+  background: #FFEBCD;
+}
+.home #vacation-form #textarea-wrapper {
+  width: 100%;
+}
+.home #vacation-form #textarea-wrapper textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 5px solid #17A2B8;
+  padding: 3%;
+  font-family: 'Times New Roman', serif;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+.home #vacation-form #textarea-wrapper textarea:hover {
+  border: 5px solid #ffe1b3;
+  transition: 0.2s;
+}
+.home #vacation-form #textarea-wrapper textarea:focus {
+  border: 5px solid #ffe1b3;
+}
+.home #vacation-form #textarea-wrapper .form-text {
+  font-size: 2.2rem;
+}
+.home #vacation-form .form-text {
+  font-family: 'Indie Flower', cursive;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.home #vacation-form button {
+  background: #17A2B8;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  width: 82%;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 5% auto;
+  font-size: 2.5rem;
+  width: 50%;
+}
+.home #vacation-form button span {
+  position: relative;
+  transition: 0.5s;
+}
+.home #vacation-form button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.home #vacation-form button:hover span {
+  padding-right: 20px;
+}
+.home #vacation-form button:hover span:after {
+  opacity: 1;
+}
+.home #vacation-form button:active {
+  background: #02b1cd;
+}
+.home #vacation-form button span:after {
+  content: '\2600';
+}
